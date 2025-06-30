@@ -1,0 +1,307 @@
+entities:
+  - name: dataPlatform
+    keyAspect: dataPlatformKey
+    aspects:
+      - dataPlatformInfo
+  - name: dataset
+    keyAspect: datasetKey
+    aspects:
+      - datasetProperties
+      - editableDatasetProperties
+      - datasetDeprecation
+      - datasetUpstreamLineage
+      - institutionalMemory
+      - ownership
+      - status
+      - globalTags
+      - schemaMetadata
+      - editableSchemaMetadata
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+      - subTypes
+  - name: dataJob
+    keyAspect: dataJobKey
+    aspects:
+      - dataJobInfo
+      - editableDataJobProperties
+      - dataJobInputOutput
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: dataFlow
+    keyAspect: dataFlowKey
+    aspects:
+      - dataFlowInfo
+      - editableDataFlowProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: dataProcessInstance
+    keyAspect: dataProcessInstanceKey
+    aspects:
+      - dataProcessInstanceInput
+      - dataProcessInstanceOutput
+      - dataProcessInstanceProperties
+      - dataProcessInstanceRunEvent
+  - name: chart
+    keyAspect: chartKey
+    aspects:
+      - chartInfo
+      - editableChartProperties
+      - chartQuery
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: dashboard
+    keyAspect: dashboardKey
+    aspects:
+      - dashboardInfo
+      - editableDashboardProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: notebook
+    keyAspect: notebookKey
+    aspects:
+      - notebookInfo
+      - notebookContent
+      - editableNotebookProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: corpuser
+    keyAspect: corpUserKey
+    aspects:
+      - corpUserInfo
+      - corpUserEditableInfo
+      - corpUserStatus
+      - groupMembership
+      - globalTags
+      - status
+  - name: corpGroup
+    keyAspect: corpGroupKey
+    aspects:
+      - corpGroupInfo
+      - groupMembership
+      - ownership
+      - status
+  - name: domain
+    keyAspect: domainKey
+    aspects:
+      - domainProperties
+      - institutionalMemory
+      - ownership
+  - name: container
+    keyAspect: containerKey
+    aspects:
+      - containerProperties
+      - editableContainerProperties
+      - dataPlatformInstance
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - domains
+      - subTypes
+  - name: tag
+    keyAspect: tagKey
+    aspects:
+      - tagProperties
+      - ownership
+      - deprecation
+  - name: glossaryTerm
+    keyAspect: glossaryTermKey
+    aspects:
+      - glossaryTermInfo
+      - institutionalMemory
+      - ownership
+      - deprecation
+  - name: glossaryNode
+    keyAspect: glossaryNodeKey
+    aspects:
+      - glossaryNodeInfo
+      - institutionalMemory
+      - ownership
+  - name: mlModel
+    keyAspect: mlModelKey
+    aspects:
+      - mlModelProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: mlModelGroup
+    keyAspect: mlModelGroupKey
+    aspects:
+      - mlModelGroupProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: mlFeatureTable
+    keyAspect: mlFeatureTableKey
+    aspects:
+      - mlFeatureTableProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: mlFeature
+    keyAspect: mlFeatureKey
+    aspects:
+      - mlFeatureProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: mlPrimaryKey
+    keyAspect: mlPrimaryKeyKey
+    aspects:
+      - mlPrimaryKeyProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: dataHubPolicy
+    keyAspect: dataHubPolicyKey
+    aspects:
+      - dataHubPolicyInfo
+  - name: assertion
+    keyAspect: assertionKey
+    aspects:
+      - assertionInfo
+      - dataPlatformInstance
+      - assertionRunEvent
+  - name: dataPlatformInstance
+    keyAspect: dataPlatformInstanceKey
+    aspects:
+      - dataPlatformInstanceProperties
+      - ownership
+      - globalTags
+      - institutionalMemory
+      - deprecation
+  - name: dataHubIngestionSource
+    keyAspect: dataHubIngestionSourceKey
+    aspects:
+      - dataHubIngestionSourceInfo
+  - name: dataHubExecutionRequest
+    keyAspect: dataHubExecutionRequestKey
+    aspects:
+      - dataHubExecutionRequestInput
+      - dataHubExecutionRequestSignal
+      - dataHubExecutionRequestResult
+  - name: dataHubSecret
+    keyAspect: dataHubSecretKey
+    aspects:
+      - dataHubSecretValue
+  - name: dataHubAccessToken
+    keyAspect: dataHubAccessTokenKey
+    aspects:
+      - dataHubAccessTokenInfo
+  - name: invite
+    keyAspect: inviteTokenKey
+    aspects:
+      - inviteToken
+  - name: globalSettings
+    keyAspect: globalSettingsKey
+    aspects:
+      - globalSettingsInfo
+  - name: dataHubRole
+    keyAspect: dataHubRoleKey
+    aspects:
+      - dataHubRoleInfo
+  - name: post
+    keyAspect: postKey
+    aspects:
+      - postInfo
+  - name: dataHubStepState
+    keyAspect: dataHubStepStateKey
+    aspects:
+      - dataHubStepStateProperties
+  - name: query
+    keyAspect: queryKey
+    aspects:
+      - queryProperties
+      - querySubjects
+  - name: dataProduct
+    keyAspect: dataProductKey
+    aspects:
+      - dataProductProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: ownershipType
+    keyAspect: ownershipTypeKey
+    aspects:
+      - ownershipTypeInfo
+  - name: businessAttribute
+    keyAspect: businessAttributeKey
+    aspects:
+      - businessAttributeInfo
+      - ownership
+      - status
+      - globalTags
+  - name: test
+    keyAspect: testKey
+    aspects:
+      - testInfo
+  - name: dataHubView
+    keyAspect: dataHubViewKey
+    aspects:
+      - dataHubViewInfo
+  - name: dataContract
+    keyAspect: dataContractKey
+    aspects:
+      - dataContractProperties
+      - dataContractStatus
+      - status
+      - ownership
+  - name: erModelRelationship
+    keyAspect: erModelRelationshipKey
+    aspects:
+      - erModelRelationshipProperties
+      - ownership
+      - status
+      - globalTags
+      - browsePaths
+      - dataPlatformInstance
+      - domains
+  - name: incident
+    keyAspect: incidentKey
+    aspects:
+      - incidentInfo
+      - incidentSource
+      - incidentStatus
+events:
+  - name: MetadataAuditEvent
+  - name: MetadataChangeEvent
+  - name: FailedMetadataChangeEvent
